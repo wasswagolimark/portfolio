@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact | Wasswa Goli Mark - Full Stack Developer</title>
+    <meta name="description" content="Get in touch with Wasswa Goli Mark for web development projects, collaborations, or professional inquiries. Available for full-stack development opportunities.">
+    <meta name="keywords" content="Contact Developer, Hire Full Stack Developer, Web Development Services, Wasswa Goli Mark Contact">
+    <meta name="author" content="Wasswa Goli Mark">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Contact Mark Wasswa - Software Developer & Data Scientist">
+    <meta property="og:description" content="Get in touch with me for collaborations, job opportunities, or project inquiries.">
+    <meta property="og:image" content="https://wasswagolimark.github.io/portfolio/images/contact-preview.png">
+    <meta property="og:url" content="https://wasswagolimark.github.io/portfolio/contact.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Mark Wasswa - Software Developer & Data Scientist">
+    <meta name="twitter:description" content="Get in touch with me for collaborations, job opportunities, or project inquiries.">
+    <meta name="twitter:image" content="https://wasswagolimark.github.io/portfolio/images/contact-preview.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wasswagolimark.github.io/portfolio/contact.html">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">WGM (The Dev)</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1 class="text-center">Get In Touch</h1>
+            <p class="lead text-center">Let's discuss your project or just say hello!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p class="text-muted mb-4">Feel free to reach out through any of these channels</p>
+                        
+                        <div class="contact-info-items">
+                            <div class="contact-info-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:golimark3@gmail.com">golimark3@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+256756209253">+256 756 209 253</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Location</h4>
+                                    <p>Kampala, Uganda</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-profiles">
+                            <h4>Connect With Me</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/markgoli" class="github" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/wasswa-goli-mark-058058233" class="linkedin" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact-form-wrapper">
+                        <h3>Send Me a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="button-text">Send Message</span>
+                                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message (hidden by default) -->
+                        <div class="success-message d-none" id="successMessage">
+                            <div class="success-content">
+                                <div class="success-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h3>Message Sent Successfully!</h3>
+                                <p>Thank you for reaching out. I'll get back to you soon.</p>
+                                <button class="btn btn-primary" onclick="resetForm()">Send Another Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/markgoli" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/wasswa-goli-mark-058058233" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Wasswa Goli Mark. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
