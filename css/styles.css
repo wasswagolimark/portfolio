@@ -492,7 +492,7 @@ html.light #mob-menu{background:rgba(240,244,251,.97)}
   letter-spacing:.04em;color:var(--text);line-height:1;margin-bottom:10px;
 }
 .about-text h2 span{color:var(--cyan)}
-.about-text p{font-size:.9rem;color:var(--text-muted);line-height:1.85;margin-bottom:18px;font-weight:300}
+.about-text p{font-size:.9rem;color:var(--text-muted);line-height:1.85;margin-bottom:18px;font-weight:300;text-align:justify;}
 .about-text p strong{color:var(--text);font-weight:500}
 
 .about-pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}
